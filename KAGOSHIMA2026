@@ -1,0 +1,458 @@
+# HEISHIBAKAI
+ KAGOSHIMA TOUR 2026
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>平芝会鹿児島ツアー しおり</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@500;700;900&family=Noto+Sans+JP:wght@400;500;700;900&display=swap');
+        
+        body {
+            font-family: 'Noto Sans JP', sans-serif;
+            background-color: #f8fafc;
+            background-image: radial-gradient(#e2e8f0 1px, transparent 1px);
+            background-size: 20px 20px;
+        }
+
+        .serif {
+            font-family: 'Noto Serif JP', serif;
+        }
+
+        /* チャットのスクロールバー用スタイル */
+        #chat-messages::-webkit-scrollbar { width: 6px; }
+        #chat-messages::-webkit-scrollbar-thumb { background-color: #cbd5e1; border-radius: 3px; }
+
+        /* WEB用カードスタイル */
+        .web-card {
+            background: white;
+            border-radius: 24px;
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+    </style>
+</head>
+<body class="flex flex-col items-center sm:py-12 bg-slate-100">
+
+    <!-- コンテンツ全体を中央に寄せるラッパー（1枚のLPスタイル） -->
+    <div class="w-full max-w-[500px] bg-white sm:rounded-2xl sm:shadow-2xl overflow-hidden pb-10 mb-24 shadow-lg">
+
+        <!-- ==================== トップビジュアル ==================== -->
+        <div class="relative h-64 w-full flex-shrink-0">
+            <!-- ⬇️ ご自身の写真に差し替える場合はここの src="..." を変更します -->
+            <img src="https://www.sakurajima.gr.jp/wp-content/uploads/2024/12/spot-yunohira01.jpg" alt="" class="absolute inset-0 w-full h-full object-cover">
+            <div class="absolute inset-0 bg-gradient-to-b from-emerald-900/80 to-emerald-800/60"></div>
+            <div class="absolute inset-0 flex flex-col items-center justify-center text-white text-center p-4">
+                <span class="bg-emerald-600/80 text-[10px] font-bold px-3 py-1 rounded-full mb-2 tracking-widest border border-emerald-400/30">HEISHIBA KAI GOLF TOUR</span>
+                <h1 class="text-3xl font-black serif tracking-wider mb-2 drop-shadow-lg">🌴 平芝会<br>鹿児島ツアー ⛳️</h1>
+                <p class="text-xs font-medium drop-shadow-md text-emerald-50">〜名門コースと名湯「指宿白水館」を満喫〜</p>
+            </div>
+        </div>
+
+        <!-- ==================== スケジュール セクション ==================== -->
+        <div class="p-5 sm:p-6 flex flex-col gap-6">
+            
+            <!-- Day 1 -->
+            <div>
+                <div class="flex items-center mb-3 border-b-2 border-emerald-100 pb-2">
+                    <span class="bg-emerald-600 text-white text-[11px] font-bold py-1 px-3 rounded-full mr-2">Day 1</span>
+                    <h3 class="text-base font-bold text-gray-800">3月26日(木)</h3>
+                </div>
+                <div class="space-y-4 text-sm">
+                    <div class="flex items-start gap-2">
+                        <span class="text-lg shrink-0">✈️</span>
+                        <div class="mt-0.5"><p class="font-bold text-gray-800">各自フライトで鹿児島へ</p></div>
+                    </div>
+                    <div class="flex items-start gap-2">
+                        <span class="text-lg shrink-0">🚗</span>
+                        <div class="mt-0.5"><p class="font-bold text-gray-800 mb-0.5">鹿児島空港にて合流・出発</p><p class="text-xs text-gray-500">レンタカー・海老原車にて移動</p></div>
+                    </div>
+                    <!-- 溝辺カントリークラブ -->
+                    <div class="flex items-start gap-2">
+                        <span class="text-lg shrink-0 mt-1">⛳️</span>
+                        <div class="w-full">
+                            <div class="bg-emerald-50/70 rounded-xl p-3 border border-emerald-100/60 flex flex-col sm:flex-row gap-3 shadow-sm">
+                                <img src="https://www.mizobecc.co.jp/images/top/photo01.jpg" alt="" class="w-full sm:w-20 h-24 sm:h-20 object-cover rounded-lg shrink-0 border border-emerald-100">
+                                <div class="flex-grow flex flex-col justify-center">
+                                    <p class="font-bold text-emerald-700 text-sm mb-0.5">溝辺カントリークラブ</p>
+                                    <a href="https://www.mizobecc.co.jp/" target="_blank" class="text-[10px] text-blue-600 underline mb-2 block truncate">https://www.mizobecc.co.jp/</a>
+                                    <div class="grid grid-cols-1 gap-1.5 text-xs">
+                                        <div class="flex items-center"><span class="font-bold text-orange-600 w-14 shrink-0">9:52 OUT</span><span class="text-gray-700 font-medium">上山/木本/中川/上加世田</span></div>
+                                        <div class="flex items-center"><span class="font-bold text-orange-600 w-14 shrink-0">9:59 OUT</span><span class="text-gray-700 font-medium">鎌田/海老原/野間口/杉本</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-2">
+                        <span class="text-lg shrink-0">♨️</span>
+                        <div class="mt-0.5"><p class="font-bold text-gray-800 mb-0.5">指宿白水館へ移動・宿泊</p><p class="text-xs text-gray-500">名湯で汗を流し大宴会です！</p></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Day 2 -->
+            <div>
+                <div class="flex items-center mb-3 border-b-2 border-sky-100 pb-2">
+                    <span class="bg-sky-600 text-white text-[11px] font-bold py-1 px-3 rounded-full mr-2">Day 2</span>
+                    <h3 class="text-base font-bold text-gray-800">3月27日(金)</h3>
+                </div>
+                <div class="space-y-4 text-sm">
+                    <div class="flex items-start gap-2">
+                        <span class="text-lg shrink-0">🍽️</span>
+                        <div class="mt-0.5"><p class="font-bold text-gray-800 mb-1">7:00 朝食・チェックアウト</p><p class="font-bold text-gray-800">7:45 出発 〜 8:15 ゴルフ場到着</p></div>
+                    </div>
+                    <!-- 指宿ゴルフクラブ -->
+                    <div class="flex items-start gap-2">
+                        <span class="text-lg shrink-0 mt-1">⛳️</span>
+                        <div class="w-full">
+                            <div class="bg-sky-50/70 rounded-xl p-3 border border-sky-100/60 flex flex-col sm:flex-row gap-3 shadow-sm">
+                                <img src="https://ibusukigolf.iwasakihotels.com/img/slider/2.jpg" alt="" class="w-full sm:w-20 h-24 sm:h-20 object-cover rounded-lg shrink-0 border border-sky-100">
+                                <div class="flex-grow flex flex-col justify-center">
+                                    <p class="font-bold text-sky-700 text-sm mb-0.5">指宿ゴルフクラブ</p>
+                                    <a href="https://ibusukigolf.iwasakihotels.com/index.php" target="_blank" class="text-[10px] text-blue-600 underline mb-2 block truncate">https://ibusukigolf.iwasakihotels.com/</a>
+                                    <div class="grid grid-cols-1 gap-1.5 text-xs">
+                                        <div class="flex items-center"><span class="font-bold text-orange-600 w-14 shrink-0">9:00 OUT</span><span class="text-gray-700 font-medium">中川/海老原/鎌田/木本</span></div>
+                                        <div class="flex items-center"><span class="font-bold text-orange-600 w-14 shrink-0">9:08 OUT</span><span class="text-gray-700 font-medium">上山/上加世田/野間口/杉本</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-2">
+                        <span class="text-lg shrink-0">👋</span>
+                        <div class="mt-0.5"><p class="font-bold text-gray-800">空港へ移動 〜 解散、各フライトで帰路へ</p></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- ==================== 宿泊・フライト セクション ==================== -->
+        <div class="bg-slate-800 py-4 text-center flex-shrink-0 border-t-4 border-slate-700">
+            <h2 class="text-xl font-black tracking-wider text-white drop-shadow-md">🏨 宿泊 ＆ ✈️ フライト情報</h2>
+        </div>
+
+        <!-- 宿泊・フライト内容 -->
+        <div class="p-5 sm:p-6 flex flex-col gap-6">
+            
+            <!-- 宿泊情報 -->
+            <div>
+                <h3 class="text-sm font-bold text-indigo-900 border-b-2 border-indigo-200 pb-1.5 mb-3 flex items-center">
+                    指宿白水館 <span class="text-xs font-normal text-gray-500 ml-2">日本庭園と砂むし温泉</span>
+                </h3>
+                <div class="flex flex-col sm:flex-row gap-4 mb-4">
+                    <img src="https://www.hakusuikan.co.jp/wp/wp-content/uploads/2025/06/footcsr_4.webp" alt="" class="w-full sm:w-24 h-32 sm:h-24 object-cover rounded-xl shrink-0 border border-gray-200 shadow-sm">
+                    <div class="flex-grow flex flex-col justify-center">
+                        <div class="flex items-center gap-2 mb-1">
+                            <p class="font-bold text-gray-800 text-sm">指宿白水館</p>
+                            <span class="text-[10px] font-bold bg-indigo-50 text-indigo-600 px-2 py-0.5 rounded-full border border-indigo-100">1泊2食付</span>
+                        </div>
+                        <a href="https://www.hakusuikan.co.jp/" target="_blank" class="text-xs text-blue-600 underline block mb-2">https://www.hakusuikan.co.jp/</a>
+                        <p class="text-xs text-gray-600 leading-relaxed">砂むし温泉と鹿児島の美食で大宴会♨️</p>
+                    </div>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                    <div class="bg-indigo-50/70 rounded-xl p-3 border border-indigo-100">
+                        <div class="text-[10px] text-indigo-600 font-bold mb-1">1部屋目</div>
+                        <p class="font-bold text-gray-800 text-xs leading-relaxed">海老原 / 上加世田<br>中川 / 杉本</p>
+                    </div>
+                    <div class="bg-indigo-50/70 rounded-xl p-3 border border-indigo-100">
+                        <div class="text-[10px] text-indigo-600 font-bold mb-1">2部屋目</div>
+                        <p class="font-bold text-gray-800 text-xs leading-relaxed">鎌田 / 木本<br>野間口 / 上山</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- フライト情報 -->
+            <div>
+                <h3 class="text-sm font-bold text-amber-800 border-b-2 border-amber-200 pb-1.5 mb-3">
+                    往復フライト一覧
+                </h3>
+                <div class="space-y-3">
+                    <!-- グループ1 -->
+                    <div class="bg-gray-50 rounded-xl p-3 border border-gray-100 flex items-start gap-3 shadow-sm">
+                        <div class="bg-amber-100 text-amber-800 text-xs font-bold rounded-full w-6 h-6 flex items-center justify-center shrink-0 mt-0.5">1</div>
+                        <div class="w-full">
+                            <p class="font-bold text-gray-800 text-sm mb-1.5 border-b border-gray-200 pb-1">上加世田 / 中川 / 上山 / 木本</p>
+                            <div class="text-xs text-gray-600 space-y-1">
+                                <p><span class="font-bold text-sky-600 inline-block w-8">往:</span> JAL641 (6:25 羽田発)</p>
+                                <p><span class="font-bold text-orange-500 inline-block w-8">復:</span> SKY308 (19:50 鹿児島発)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- グループ2 -->
+                    <div class="bg-gray-50 rounded-xl p-3 border border-gray-100 flex items-start gap-3 shadow-sm">
+                        <div class="bg-amber-100 text-amber-800 text-xs font-bold rounded-full w-6 h-6 flex items-center justify-center shrink-0 mt-0.5">2</div>
+                        <div class="w-full">
+                            <p class="font-bold text-gray-800 text-sm mb-1.5 border-b border-gray-200 pb-1">杉本 / 鎌田</p>
+                            <div class="text-xs text-gray-600 space-y-1">
+                                <p><span class="font-bold text-sky-600 inline-block w-8">往:</span> ANA635 (6:40 羽田発)</p>
+                                <p><span class="font-bold text-orange-500 inline-block w-8">復:</span> ANA630 (19:15 鹿児島発)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- グループ3 -->
+                    <div class="bg-gray-50 rounded-xl p-3 border border-gray-100 flex items-start gap-3 shadow-sm">
+                        <div class="bg-amber-100 text-amber-800 text-xs font-bold rounded-full w-6 h-6 flex items-center justify-center shrink-0 mt-0.5">3</div>
+                        <div class="w-full">
+                            <p class="font-bold text-gray-800 text-sm mb-1.5 border-b border-gray-200 pb-1">野間口</p>
+                            <div class="text-xs text-gray-600 space-y-1">
+                                <p><span class="font-bold text-sky-600 inline-block w-8">往:</span> JAL641 (6:25 羽田発)</p>
+                                <p><span class="bg-yellow-100 text-yellow-800 font-bold px-1.5 py-0.5 rounded">復: 延泊予定</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- グループ4 -->
+                    <div class="bg-gray-50 rounded-xl p-3 border border-gray-100 flex items-start gap-3 shadow-sm">
+                        <div class="bg-amber-100 text-amber-800 text-xs font-bold rounded-full w-6 h-6 flex items-center justify-center shrink-0 mt-0.5">4</div>
+                        <div class="w-full">
+                            <p class="font-bold text-gray-800 text-sm mb-1.5 border-b border-gray-200 pb-1">海老原</p>
+                            <div class="text-xs text-gray-600 mt-1.5">
+                                <p>往復ともに別行動（現地合流）</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center pt-2">
+                <p class="text-gray-500 font-bold text-xs">好天に恵まれますように🙏！</p>
+            </div>
+        </div>
+
+        <!-- ==================== コンペ表彰 セクション ==================== -->
+        <div class="bg-yellow-600 py-4 text-center flex-shrink-0 border-t-4 border-yellow-500">
+            <h2 class="text-xl font-black tracking-wider text-white drop-shadow-md">🏆 コンペ表彰（２R通算）</h2>
+        </div>
+
+        <!-- コンペ内容 -->
+        <div class="p-5 sm:p-6 flex flex-col gap-5">
+            
+            <!-- 参加費 -->
+            <div class="bg-yellow-50 rounded-xl p-3 border border-yellow-200 text-center shadow-sm">
+                <p class="text-sm font-bold text-yellow-900">参加費: 2,000円 / 人 <span class="text-[10px] font-normal text-yellow-700 ml-1">（×8名＝16,000円）</span></p>
+            </div>
+            
+            <!-- 順位賞 -->
+            <div>
+                <h3 class="text-sm font-bold text-gray-800 border-b-2 border-gray-200 pb-1.5 mb-3">順位賞</h3>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
+                    <div class="flex justify-between items-center bg-white border border-gray-100 p-2.5 px-4 rounded-xl shadow-sm text-sm">
+                        <span class="font-bold text-yellow-600 text-base">🥇 優勝</span><span class="font-bold text-gray-800 text-base">5,000円</span>
+                    </div>
+                    <div class="flex justify-between items-center bg-white border border-gray-100 p-2.5 px-4 rounded-xl shadow-sm text-sm">
+                        <span class="font-bold text-slate-500 text-base">🥈 準優勝</span><span class="font-bold text-gray-800 text-base">3,000円</span>
+                    </div>
+                    <div class="flex justify-between items-center bg-white border border-gray-100 p-2.5 px-4 rounded-xl shadow-sm text-sm">
+                        <span class="font-bold text-amber-700 text-base">🥉 3位</span><span class="font-bold text-gray-800 text-base">2,000円</span>
+                    </div>
+                    <div class="flex justify-between items-center bg-white border border-gray-100 p-2.5 px-4 rounded-xl shadow-sm text-sm">
+                        <span class="font-bold text-blue-600 text-base">💣 BB</span><span class="font-bold text-gray-800 text-base">1,000円</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 各賞 -->
+            <div>
+                <h3 class="text-sm font-bold text-gray-800 border-b-2 border-gray-200 pb-1.5 mb-3">各賞（特別賞）</h3>
+                <div class="space-y-2.5">
+                    <div class="flex justify-between items-center bg-white border border-gray-100 p-2.5 px-4 rounded-xl shadow-sm text-sm">
+                        <span class="font-bold text-emerald-600">🦅 イーグル or 最多バーディ賞</span>
+                        <span class="font-bold text-gray-800 shrink-0 ml-2">2,000円</span>
+                    </div>
+                    <div class="flex justify-between items-center bg-white border border-gray-100 p-2.5 px-4 rounded-xl shadow-sm text-sm">
+                        <span class="font-bold text-sky-600">👑 ベスグロ <span class="text-[10px] font-normal text-gray-500 ml-1">(2日間合計)</span></span>
+                        <span class="font-bold text-gray-800 shrink-0 ml-2">1,000円</span>
+                    </div>
+                    <div class="flex justify-between items-center bg-white border border-gray-100 p-2.5 px-4 rounded-xl shadow-sm text-sm">
+                        <span class="font-bold text-indigo-600">🌊 大波賞① <span class="text-[10px] font-normal text-gray-500 ml-1">(ネット大波 初日＞2日目)</span></span>
+                        <span class="font-bold text-gray-800 shrink-0 ml-2">1,000円</span>
+                    </div>
+                    <div class="flex justify-between items-center bg-white border border-gray-100 p-2.5 px-4 rounded-xl shadow-sm text-sm">
+                        <span class="font-bold text-purple-600">🌊 大波賞② <span class="text-[10px] font-normal text-gray-500 ml-1">(グロス大波 初日＞2日目)</span></span>
+                        <span class="font-bold text-gray-800 shrink-0 ml-2">1,000円</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 表彰式の案内 -->
+            <div class="mt-2 bg-red-50 border border-red-200 border-l-4 border-l-red-500 rounded-lg p-3">
+                <p class="text-red-700 font-bold text-sm mb-1">🥂 表彰式は空港内レストランにて開催予定</p>
+                <p class="text-red-500 text-xs pl-6">※フライトまでの時間次第となります</p>
+            </div>
+            
+            <div class="text-center pt-4 pb-2">
+                <p class="text-gray-400 font-bold text-xs">平芝会 鹿児島ツアー</p>
+            </div>
+        </div>
+        
+    </div>
+
+    <!-- ==================== AI ツアーコンシェルジュ ==================== -->
+    <div class="fixed bottom-6 right-6 z-50 flex flex-col items-end">
+        
+        <!-- チャットパネル -->
+        <div id="ai-chat-panel" class="hidden w-[calc(100vw-2rem)] sm:w-80 bg-white rounded-2xl shadow-2xl border border-gray-200 overflow-hidden mb-4 origin-bottom-right transition-all">
+            <!-- ヘッダー -->
+            <div class="bg-gradient-to-r from-emerald-500 to-teal-400 p-3 text-white flex items-center justify-between">
+                <div class="flex items-center gap-2">
+                    <span class="text-xl">✨</span>
+                    <h3 class="font-bold text-base">AI コンシェルジュ</h3>
+                </div>
+                <button onclick="toggleAIChat()" class="text-white hover:text-gray-200 focus:outline-none bg-black/10 rounded-full w-8 h-8 flex items-center justify-center text-lg">
+                    ✕
+                </button>
+            </div>
+            <!-- チャット履歴エリア -->
+            <div id="chat-messages" class="p-4 h-64 overflow-y-auto bg-slate-50 flex flex-col gap-3">
+                <div class="flex items-start gap-2">
+                    <div class="bg-white border border-gray-200 p-3 rounded-xl rounded-tl-none shadow-sm text-sm text-gray-800 max-w-[90%] leading-relaxed">
+                        鹿児島の気温、服装、ご当地グルメ、お土産など、何でもお気軽にご質問ください！⛳️
+                    </div>
+                </div>
+                <!-- クイックプロンプト -->
+                <div id="quick-prompts" class="flex flex-wrap gap-2 mt-2">
+                    <button onclick="sendAIQuery('3月下旬の気温とおすすめの服装は？')" class="bg-teal-50 text-teal-700 border border-teal-200 text-xs py-1.5 px-3 rounded-full hover:bg-teal-100 transition-colors">👕 服装について</button>
+                    <button onclick="sendAIQuery('空港で買えるおすすめのお土産は？')" class="bg-teal-50 text-teal-700 border border-teal-200 text-xs py-1.5 px-3 rounded-full hover:bg-teal-100 transition-colors">🎁 お土産</button>
+                </div>
+            </div>
+            <!-- 入力エリア -->
+            <div class="p-3 bg-white border-t border-gray-200 flex items-center gap-2">
+                <input type="text" id="ai-input" placeholder="質問を入力..." class="flex-grow border border-gray-300 rounded-full px-4 py-2 text-sm focus:outline-none focus:border-emerald-500 focus:ring-1 focus:ring-emerald-500" onkeypress="if(event.key === 'Enter') sendUserMessage()">
+                <button onclick="sendUserMessage()" class="bg-emerald-500 hover:bg-emerald-600 text-white rounded-full w-10 h-10 flex items-center justify-center shrink-0 transition-colors">
+                    <i class="fa-solid fa-paper-plane"></i> ➤
+                </button>
+            </div>
+        </div>
+
+        <!-- 起動ボタン -->
+        <button id="ai-toggle-btn" onclick="toggleAIChat()" class="bg-gradient-to-r from-emerald-600 to-teal-500 hover:from-emerald-700 hover:to-teal-600 text-white font-bold w-14 h-14 rounded-full shadow-lg flex items-center justify-center transition-transform transform hover:scale-105 border-2 border-white text-2xl">
+            ✨
+        </button>
+    </div>
+
+    <!-- AI用スクリプト -->
+    <script>
+        const apiKey = ""; // API key is provided by the execution environment
+        const chatMessages = document.getElementById('chat-messages');
+        const aiInput = document.getElementById('ai-input');
+        const quickPrompts = document.getElementById('quick-prompts');
+
+        function toggleAIChat() {
+            const chatPanel = document.getElementById('ai-chat-panel');
+            const toggleBtn = document.getElementById('ai-toggle-btn');
+            if (chatPanel.classList.contains('hidden')) {
+                chatPanel.classList.remove('hidden');
+                toggleBtn.classList.add('hidden');
+                aiInput.focus();
+            } else {
+                chatPanel.classList.add('hidden');
+                toggleBtn.classList.remove('hidden');
+            }
+        }
+
+        function sendAIQuery(text) {
+            aiInput.value = text;
+            sendUserMessage();
+            if(quickPrompts) quickPrompts.classList.add('hidden');
+        }
+
+        async function sendUserMessage() {
+            const text = aiInput.value.trim();
+            if (!text) return;
+
+            appendMessage(text, 'user');
+            aiInput.value = '';
+            const loadingId = appendLoading();
+
+            try {
+                const responseText = await fetchGeminiResponse(text);
+                removeElement(loadingId);
+                appendMessage(responseText, 'ai');
+            } catch (error) {
+                console.error("Gemini API Error:", error);
+                removeElement(loadingId);
+                appendMessage("ごめんなさい、ちょっと考えすぎてしまいました💦 もう一度質問してみていただけますか？", 'error');
+            }
+        }
+
+        async function fetchGeminiResponse(userText) {
+            const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-09-2025:generateContent?key=${apiKey}`;
+            const payload = {
+                contents: [{ parts: [{ text: userText }] }],
+                systemInstruction: {
+                    parts: [{ text: "あなたは「平芝会鹿児島ツアー」の専属AIコンシェルジュです。日程は3月26日(木)〜27日(金)で、ゴルフ場は「溝辺カントリークラブ」「指宿ゴルフクラブ」、宿泊は「指宿白水館」です。参加者からの質問に、フレンドリーで親切なトーンで絵文字を交え簡潔に回答してください。" }]
+                }
+            };
+
+            let retries = 5;
+            let delay = 1000;
+            
+            for (let i = 0; i < retries; i++) {
+                try {
+                    const response = await fetch(url, {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify(payload)
+                    });
+                    
+                    if (!response.ok) throw new Error(`HTTP error: ${response.status}`);
+                    const data = await response.json();
+                    return data.candidates[0].content.parts[0].text;
+                } catch (error) {
+                    if (i === retries - 1) throw error;
+                    await new Promise(res => setTimeout(res, delay));
+                    delay *= 2;
+                }
+            }
+        }
+
+        function appendMessage(text, sender) {
+            const wrapper = document.createElement('div');
+            wrapper.className = `flex items-start gap-2 mt-3 ${sender === 'user' ? 'justify-end' : ''}`;
+            
+            const bubble = document.createElement('div');
+            if (sender === 'user') {
+                bubble.className = 'bg-emerald-600 text-white p-3 rounded-xl rounded-tr-none shadow-sm text-sm max-w-[85%] leading-relaxed';
+                bubble.textContent = text;
+            } else {
+                bubble.className = `bg-white border p-3 rounded-xl rounded-tl-none shadow-sm text-sm text-gray-800 max-w-[90%] leading-relaxed ${sender === 'error' ? 'border-red-300 bg-red-50' : 'border-gray-200'}`;
+                let formattedText = text.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>').replace(/\n/g, '<br>');
+                bubble.innerHTML = formattedText;
+            }
+            
+            wrapper.appendChild(bubble);
+            chatMessages.appendChild(wrapper);
+            chatMessages.scrollTop = chatMessages.scrollHeight;
+        }
+
+        function appendLoading() {
+            const id = 'loading-' + Date.now();
+            const wrapper = document.createElement('div');
+            wrapper.id = id;
+            wrapper.className = 'flex items-start gap-2 mt-3';
+            wrapper.innerHTML = `
+                <div class="bg-white border border-gray-200 p-3 rounded-xl rounded-tl-none shadow-sm flex items-center gap-1.5">
+                    <div class="w-2 h-2 bg-emerald-400 rounded-full animate-bounce"></div>
+                    <div class="w-2 h-2 bg-emerald-500 rounded-full animate-bounce" style="animation-delay: 0.1s"></div>
+                    <div class="w-2 h-2 bg-emerald-600 rounded-full animate-bounce" style="animation-delay: 0.2s"></div>
+                </div>
+            `;
+            chatMessages.appendChild(wrapper);
+            chatMessages.scrollTop = chatMessages.scrollHeight;
+            return id;
+        }
+
+        function removeElement(id) {
+            const el = document.getElementById(id);
+            if (el) el.remove();
+        }
+    </script>
+</body>
+</html>
